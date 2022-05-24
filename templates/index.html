@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}" />
+
+    <title>Klasifikasi kain cepuk</title>
+  </head>
+  <body id="home">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top" style="background-color: #faebd7">
+      <div class="container">
+        <a class="navbar-brand" href="#">KLASIFIKASI KAIN CEPUK</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#process">Process</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#processcam">ProCam</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Jumbotron -->
+    <section class="jumbotron text-center">
+      <image src="{{ url_for('static', filename='img/1.jpg')}}" alt="Wayan Kiki Oktalao" width="200" class="rounded-circle img-thumbnail"></image>
+      <!-- <img src="img/1.jpg" alt="Wayan Kiki Oktalao" width="200" class="rounded-circle img-thumbnail" /> -->
+      <h1 class="display-4">Wayan Kiki Oktalao</h1>
+      <p class="lead">Mahasiswa Informatika, Universitas Udayana | Tugas Akhir</p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,96L34.3,85.3C68.6,75,137,53,206,53.3C274.3,53,343,75,411,74.7C480,75,549,53,617,37.3C685.7,21,754,11,823,32C891.4,53,960,107,1029,112C1097.1,117,1166,75,1234,64C1302.9,53,1371,75,1406,85.3L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- End Jumbotron -->
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>About</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center fs-5" style="text-align: justify">
+          <div class="col-md-6">
+            <p>
+              Indonesia merupakan negara dengan ragam warisan kebudayaan, seperti seni musik, seni tari, seni rupa, kuliner, kesusastraan, bahasa, maupun busana. Dibidang busana, Indonesia juga mempunyai kerajinan busana tradisional daerah,
+              seperti songket, batik, kebaya, koteka serta tenun. Salah satu busana tradisional Indonesia yang dikenal masyarakat luas yaitu tenun. Tenun adalah hasil kerajinan berupa kain yang terbuat dari benang dengan cara menggabungkan
+              benang secara memanjang dan melintang. Tenun tradisional Indonesia berasal dari banyak daerah seperti Palembang, Jawa, NTT, NTB maupun di daerah Bali. Di Bali sendiri terdapat aturan tentang hari memakai kain endek (Surat
+              Edaran Nomor 04 Tahun 2021), namun selain endek ada beberapa jenis kain tenun di daerah Bali, misalnya kain gringsing, dan kain cepuk yang berasal dari daerah Nusa Penida.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <p>
+              Kain cepuk merupakan salah satu kerajinan khas Desa Tanglad, Nusa Penida, Kabupaten Klungkung, Bali, yang berasal dari nenek moyang dan diwariskan secara turun temurun. Asal-usul nama kain tenun cepuk itu sendiri berasal dari
+              bahasa Sanskerta, yakni cepuk yang berarti kayu canging. Kayu canging merupakan jenis tumbuhan yang cocok digunakan sebagai bahan dasar pembuatan kain tenun. Selain itu cepuk juga berasal dari kata tepuk yang berarti bertemu,
+              setiap motif yang ada dalam cepuk selalu saling bertemu, salah satunya kemudian membentuk geometris belah ketupat. Di samping itu juga warna benang yang digunakan pada kain cepuk mempunyai simbol-simbol warna penjuru mata
+              angin menurut kepercayaan orang bali. Warna kuning di barat melambangkan Dewa Mahadewa, Merah di selatan melambangkan Dewa Brahma, putih di timur melambangkan Dewa Iswara, hitam di utara melambangkan Dewa Wisnu, dan campuran
+              keseluruhan warna tersebut melambangkan Dewa Siwa yang berada di tengah. Oleh karena itu kain cepuk sering dipakai pada saat upacara keagamaan, Contohnya sebagai kain (pakaian yang dililitkan), selempang, tempat untuk
+              persembahyangan, dan dekorasi bangunan upacara (Sayang Telagawathi, 2017). Secara turun temurun Tanglad memiliki enam jenis cepuk, yaitu Mekawis, Kecubung, Lingking Paku, Tangi Gede, Sudamala, dan Kurung. Setiap jenis memiliki
+              motif yang berbeda dengan warna yang khas.
+            </p>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#e2edff"
+          fill-opacity="1"
+          d="M0,96L34.3,90.7C68.6,85,137,75,206,96C274.3,117,343,171,411,160C480,149,549,75,617,80C685.7,85,754,171,823,186.7C891.4,203,960,149,1029,138.7C1097.1,128,1166,160,1234,160C1302.9,160,1371,128,1406,112L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- End About -->
+
+    <!-- Gallery -->
+    <section id="gallery">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Gallery</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <image src="{{ url_for('static', filename='img/gallery/1.jpg')}}" class="card-img-top" alt="galerry 1"></image>
+              <!-- <img src="img/gallery/1.jpg" class="card-img-top" alt="galerry 1" /> -->
+              <div class="card-body">
+                <p class="card-text">
+                  <b>Cepuk Kecubung :</b> Digunakan oleh anak perempuan ketika upacara potong gigi (satu paket motif terdiri dari bunga gede-kurung-bunga gede ditambah apit gunung, panggeh taji, pacit genggong, dan mata titiran).
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <image src="{{ url_for('static', filename='img/gallery/2.jpg')}}" class="card-img-top" alt="galerry 2"></image>
+              <!-- <img src="img/gallery/2.jpg" class="card-img-top" alt="galerry 2" /> -->
+              <div class="card-body">
+                <p class="card-text"><b>Cepuk Likingpaku :</b> Digunakan oleh anak laki-laki ketika upacara potong gigi (motif garis mata titiran diganti dengan pancit genggong).</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <image src="{{ url_for('static', filename='img/gallery/3.jpg')}}" class="card-img-top" alt="galerry 3"></image>
+              <!-- <img src="img/gallery/3.jpg" class="card-img-top" alt="galerry 3" /> -->
+              <div class="card-body">
+                <p class="card-text"><b>Cepuk Mekawis :</b> Kain ini digunakan untuk membungkus tulang dalam upacara pengabenan atau kematian (motif bebas (kecubung atau kurung)).</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <image src="{{ url_for('static', filename='img/gallery/4.jpg')}}" class="card-img-top" alt="galerry 4"></image>
+              <!-- <img src="img/gallery/4.jpg" class="card-img-top" alt="galerry 4" /> -->
+              <div class="card-body">
+                <p class="card-text"><b>Cepuk Kurung :</b> Bebas digunakan oleh masyarakat umum dan bisa dimodifikasi (motif hampir sama dengan kecubung, namun hanya kurung, tidak ada bunga gede).</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <image src="{{ url_for('static', filename='img/gallery/5.jpg')}}" class="card-img-top" alt="galerry 5"></image>
+              <!-- <img src="img/gallery/5.jpg" class="card-img-top" alt="galerry 5" /> -->
+              <div class="card-body">
+                <p class="card-text"><b>Cepuk Sudamala :</b> Digunakan ketika melukat (membersihkan diri), hampir sama dengan kecubung berwarna hitam-putih.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <image src="{{ url_for('static', filename='img/gallery/6.jpg')}}" class="card-img-top" alt="galerry 6"></image>
+              <!-- <img src="img/gallery/6.jpg" class="card-img-top" alt="galerry 3" /> -->
+              <div class="card-body">
+                <p class="card-text">
+                  <b>Cepuk Tangi Gede :</b> Berfungsi sebagai sanan empeg, digunakan pada upacara anak kedua dari tiga bersaudara jika kakak pertama dan adik ketiganya meninggal (motif hampir sama dengan kecubung, tetapi pada bagian kurung
+                  berwarna hitam).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,160L34.3,181.3C68.6,203,137,245,206,234.7C274.3,224,343,160,411,144C480,128,549,160,617,165.3C685.7,171,754,149,823,160C891.4,171,960,213,1029,208C1097.1,203,1166,149,1234,144C1302.9,139,1371,181,1406,202.7L1440,224L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- End Gallery -->
+
+    <!-- Process -->
+    <section id="process">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Process</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div>
+              <form method="POST" enctype="multipart/form-data" id="my-form" class="input-group mb-3">
+                <input type="file" class="form-control" name="gambar" id="my-form" aria-describedby="inputGroupFileAddon04" aria-label="Upload" />
+                <button class="btn btn-outline-secondary" type="submit" id="btnSubmit">Process</button>
+              </form>
+              <br />
+            </div>
+          </div>
+        </div>
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2 id="output" class="badge text-wrap" style="width: 8rem; height: 2rem; font-size: medium; background-color: #faebd7; color: black">Hasil</h2>
+          </div>
+        </div>
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#e2edff"
+          fill-opacity="1"
+          d="M0,192L48,165.3C96,139,192,85,288,101.3C384,117,480,203,576,197.3C672,192,768,96,864,90.7C960,85,1056,171,1152,197.3C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <!-- End Process -->
+
+    <!-- start processcam-->
+    <section id="processcam">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col-md-12">
+            <h2>Process With Camera</h2>
+          </div>
+          <div class="col-md-12">
+            <button id="start-camera">Start Camera</button>
+            <video id="video" width="320" height="240" autoplay></video>
+            <button id="clickphoto" name="gambar">Click Photo</button>
+            <canvas id="canvas" width="320" height="240"></canvas>
+            <form method="post" enctype="multipart/form-data" id="formcamera">
+              <input type="hidden" name="gambar" id="uploadvalue" />
+            </form>
+          </div>
+        </div>
+        <script>
+          let camera_button = document.querySelector('#start-camera');
+          let video = document.querySelector('#video');
+          let click_button = document.querySelector('#clickphoto');
+          let canvas = document.querySelector('#canvas');
+
+          camera_button.addEventListener('click', async function () {
+            let stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
+            video.srcObject = stream;
+          });
+
+          click_button.addEventListener('click', function () {
+            canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+            let image_data_url = canvas.toDataURL('text/plain');
+            // let data = { gambar: image_data_url };
+            document.getElementById('uploadvalue').value = image_data_url.toString();
+            // console.log(document.getElementById('formcamera').value);
+
+            var form = $('#formcamera')[0];
+
+            // FormData object
+            var data = new FormData(form);
+
+            $.ajax({
+              type: 'POST',
+              enctype: 'multipart/form-data',
+              url: 'http://127.0.0.1:5000/prediksi',
+              data: data,
+              processData: false,
+              contentType: false,
+              cache: false,
+              success: function (responseText) {
+                $('#output2').text(responseText);
+                console.log('SUCCESS : ', responseText);
+                $('#clickphoto').prop('disabled', false);
+              },
+              error: function (e) {
+                $('#output2').text(e.responseText);
+                console.log('ERROR : ', e);
+                $('#clickphoto').prop('disabled', false);
+              },
+            });
+          });
+        </script>
+      </div>
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h2 id="output2" class="badge text-wrap" style="width: 8rem; height: 2rem; font-size: medium; background-color: #faebd7; color: black">Hasil</h2>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#faebd7"
+          fill-opacity="1"
+          d="M0,160L48,154.7C96,149,192,139,288,160C384,181,480,235,576,240C672,245,768,203,864,181.3C960,160,1056,160,1152,165.3C1248,171,1344,181,1392,186.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- End processcam -->
+
+    <!-- Footer -->
+    <footer class="text-center p-5" style="background-color: #faebd7">
+      <p>Created By <a href="https://www.instagram.com/kiki_oktalao/" class="fw-bold">Wayan Kiki Oktalao</a></p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      // Process
+      $(document).ready(function () {
+        $('#btnSubmit').click(function (event) {
+          //stop submit the form, we will post it manually.
+          event.preventDefault();
+
+          // Get form
+          var form = $('#my-form')[0];
+
+          // FormData object
+          var data = new FormData(form);
+
+          // If you want to add an extra field for the FormData
+          // data.append("CustomField", "This is some extra data, testing");
+
+          // disabled the submit button
+          $('#btnSubmit').prop('disabled', true);
+
+          $.ajax({
+            type: 'POST',
+            enctype: 'multipart/form-data',
+            url: 'http://127.0.0.1:5000/prediksigambar',
+            data: data,
+            processData: false,
+            contentType: false,
+            cache: false,
+            success: function (responseText) {
+              $('#output').text(responseText);
+              console.log('SUCCESS : ', responseText);
+              $('#btnSubmit').prop('disabled', false);
+            },
+            error: function (e) {
+              $('#output').text(e.responseText);
+              console.log('ERROR : ', e);
+              $('#btnSubmit').prop('disabled', false);
+            },
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
